@@ -1,21 +1,19 @@
 import reflex as rx
+from Python_Web.components.navbar import navbar
+from Python_Web.views.header.header import header
+
+
+
 
 class State(rx.State):
     pass
 
-def index() -> rx.component:
- return rx.hstack(
-    rx.text (
-      "geralddev",
-       height="40px",
-       
-   ),
-   position="sticky",
-   bg="black",
-   padding_x="16px",
-   padding_y="8px",
-   z_index="999"
+def index() -> rx.Component:
+ return rx.vstack(
+    navbar(),   
+    header()
  ) 
+
 
 
 app = rx.App()
