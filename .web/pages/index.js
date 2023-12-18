@@ -12,7 +12,7 @@ export default function Component() {
   return (
     <Fragment>
   <Fragment_fd0e7cb8f9fb4669a6805377d925fba0/>
-  <HStack sx={{"position": "sticky", "bg": "black", "paddingX": "16px", "paddingY": "8px"}}>
+  <HStack sx={{"position": "sticky", "bg": "black", "paddingX": "16px", "paddingY": "8px", "zIndex": "999"}}>
   <Text sx={{"height": "40px"}}>
   {`geralddev`}
 </Text>
