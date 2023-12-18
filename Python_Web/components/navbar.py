@@ -1,9 +1,9 @@
 import reflex as rx
 
-def navbar() -> rx.component:
+def navbar() -> rx.Component:
     return rx.hstack(
     rx.text (
-      "geralddev",
+      "gerald",
        height="40px",
        
    ),
