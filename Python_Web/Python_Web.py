@@ -13,8 +13,8 @@ def index() -> rx.component:
    position="sticky",
    bg="black",
    padding_x="16px",
-   padding_y="8px"
-   
+   padding_y="8px",
+   z_index="999"
  ) 
 
 
