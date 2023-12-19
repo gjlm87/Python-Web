@@ -37,7 +37,16 @@ export default function Component() {
 </VStack>
   <VStack>
   <Button>
-  {`Click Me!`}
+  {`Youtube`}
+</Button>
+  <Button>
+  {`Instagram`}
+</Button>
+  <Button>
+  {`X`}
+</Button>
+  <Button>
+  {`Facebook`}
 </Button>
 </VStack>
 </VStack>
