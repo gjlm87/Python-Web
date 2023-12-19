@@ -1,7 +1,7 @@
 
 /** @jsxImportSource @emotion/react */import { Fragment } from "react"
 import { Fragment_fd0e7cb8f9fb4669a6805377d925fba0 } from "/utils/stateful_components"
-import { Avatar, Box, Button, HStack, Image as ChakraImage, Link, Text, VStack } from "@chakra-ui/react"
+import { Avatar, Box, Button, Center, HStack, Image as ChakraImage, Link, Text, VStack } from "@chakra-ui/react"
 import "focus-visible/dist/focus-visible"
 import NextLink from "next/link"
 import NextHead from "next/head"
@@ -14,12 +14,13 @@ export default function Component() {
     <Fragment>
   <Fragment_fd0e7cb8f9fb4669a6805377d925fba0/>
   <Box>
-  <VStack>
   <HStack sx={{"position": "sticky", "bg": "black", "paddingX": "16px", "paddingY": "8px", "zIndex": "999"}}>
   <Text sx={{"height": "40px"}}>
   {`gerald`}
 </Text>
 </HStack>
+  <Center>
+  <VStack sx={{"maxWidth": "560px", "width": "100%", "marginY": "32px"}}>
   <VStack>
   <Avatar name={`Gerald Lopez`} size={`xl`}/>
   <Text>
@@ -59,6 +60,8 @@ export default function Component() {
 </Button>
 </Link>
 </VStack>
+</VStack>
+</Center>
   <VStack>
   <ChakraImage src={`favicon.ico`}/>
   <Link as={NextLink} href={`https://www.facebook.com/?locale=es_LA`} isExternal={true}>
@@ -67,7 +70,6 @@ export default function Component() {
   <Text>
   {`Todos los derechos reservados`}
 </Text>
-</VStack>
 </VStack>
 </Box>
   <NextHead>
