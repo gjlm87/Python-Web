@@ -2,7 +2,14 @@ import reflex as rx
 
 
 def link_button(text: str, url: str) -> rx.Component:
-    return rx.button(text) 
+    return rx.link(
+        rx.button(text),
+        href=url,
+        is_external=True
+        
+        
+    )
+
     
        
  

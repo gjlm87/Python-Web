@@ -1,8 +1,9 @@
 
 /** @jsxImportSource @emotion/react */import { Fragment } from "react"
 import { Fragment_fd0e7cb8f9fb4669a6805377d925fba0 } from "/utils/stateful_components"
-import { Avatar, Button, HStack, Text, VStack } from "@chakra-ui/react"
+import { Avatar, Button, HStack, Link, Text, VStack } from "@chakra-ui/react"
 import "focus-visible/dist/focus-visible"
+import NextLink from "next/link"
 import NextHead from "next/head"
 
 
@@ -36,18 +37,26 @@ export default function Component() {
 </Text>
 </VStack>
   <VStack>
+  <Link as={NextLink} href={`https://www.youtube.com`} isExternal={true}>
   <Button>
   {`Youtube`}
 </Button>
+</Link>
+  <Link as={NextLink} href={`https://www.instagram.com`} isExternal={true}>
   <Button>
   {`Instagram`}
 </Button>
+</Link>
+  <Link as={NextLink} href={`https://twitter.com`} isExternal={true}>
   <Button>
   {`X`}
 </Button>
+</Link>
+  <Link as={NextLink} href={`https://www.facebook.com?`} isExternal={true}>
   <Button>
   {`Facebook`}
 </Button>
+</Link>
 </VStack>
 </VStack>
   <NextHead>
