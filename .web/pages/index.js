@@ -1,7 +1,7 @@
 
 /** @jsxImportSource @emotion/react */import { Fragment } from "react"
 import { Fragment_fd0e7cb8f9fb4669a6805377d925fba0 } from "/utils/stateful_components"
-import { Avatar, Button, HStack, Image as ChakraImage, Link, Text, VStack } from "@chakra-ui/react"
+import { Avatar, Box, Button, HStack, Image as ChakraImage, Link, Text, VStack } from "@chakra-ui/react"
 import "focus-visible/dist/focus-visible"
 import NextLink from "next/link"
 import NextHead from "next/head"
@@ -13,6 +13,7 @@ export default function Component() {
   return (
     <Fragment>
   <Fragment_fd0e7cb8f9fb4669a6805377d925fba0/>
+  <Box>
   <VStack>
   <HStack sx={{"position": "sticky", "bg": "black", "paddingX": "16px", "paddingY": "8px", "zIndex": "999"}}>
   <Text sx={{"height": "40px"}}>
@@ -68,6 +69,7 @@ export default function Component() {
 </Text>
 </VStack>
 </VStack>
+</Box>
   <NextHead>
   <title>
   {`Reflex App`}

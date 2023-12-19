@@ -5,18 +5,19 @@ from Python_Web.views.header.header import header
 from Python_Web.views.links.links import links
 
 
-
 class State(rx.State):
     pass
 
-def index() -> rx.Component:
- return rx.vstack(
-    navbar(),   
-    header(),
-    links(),
-    footer()
- ) 
 
+def index() -> rx.Component:
+    return rx.box(rx.vstack(
+
+        navbar(),
+        header(),
+        links(),
+        footer()
+    )
+    )
 
 
 app = rx.App()
