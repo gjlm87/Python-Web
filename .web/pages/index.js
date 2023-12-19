@@ -1,7 +1,7 @@
 
 /** @jsxImportSource @emotion/react */import { Fragment } from "react"
 import { Fragment_fd0e7cb8f9fb4669a6805377d925fba0 } from "/utils/stateful_components"
-import { Avatar, Button, HStack, Link, Text, VStack } from "@chakra-ui/react"
+import { Avatar, Button, HStack, Image as ChakraImage, Link, Text, VStack } from "@chakra-ui/react"
 import "focus-visible/dist/focus-visible"
 import NextLink from "next/link"
 import NextHead from "next/head"
@@ -57,6 +57,15 @@ export default function Component() {
   {`Facebook`}
 </Button>
 </Link>
+</VStack>
+  <VStack>
+  <ChakraImage src={`favicon.ico`}/>
+  <Link as={NextLink} href={`https://www.facebook.com/?locale=es_LA`} isExternal={true}>
+  {`© 2023 Geralddev.`}
+</Link>
+  <Text>
+  {`Todos los derechos reservados`}
+</Text>
 </VStack>
 </VStack>
   <NextHead>
